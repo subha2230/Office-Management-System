@@ -1,0 +1,293 @@
+/* =========================================
+   ADD LOCATION PAGE
+========================================= */
+
+.dashboard-main {
+    background: #f5f7fb;
+}
+
+.page-title {
+    margin-bottom: 24px;
+}
+
+.page-title h1 {
+    margin: 0;
+
+    color: #172554;
+
+    font-size: 26px;
+    font-weight: 750;
+}
+
+.page-title p {
+    margin: 7px 0 0;
+
+    color: #7b8799;
+
+    font-size: 13px;
+}
+
+
+/* =========================================
+   FORM CARD
+========================================= */
+
+.form-card {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid #e8edf5;
+    border-radius: 16px;
+
+    box-shadow:
+            0 8px 28px rgba(15, 23, 42, 0.06);
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ERROR
+========================================= */
+
+.error-message {
+    margin-bottom: 22px;
+
+    padding: 12px 15px;
+
+    border: 1px solid #fecaca;
+    border-radius: 9px;
+
+    background: #fef2f2;
+
+    color: #dc2626;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================
+   FORM GRID
+========================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px 24px;
+}
+
+
+/* =========================================
+   FORM GROUP
+========================================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+
+    color: #334155;
+
+    font-size: 12px;
+    font-weight: 650;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    height: 43px;
+
+    padding: 0 13px;
+
+    border: 1px solid #dce2eb;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-size: 13px;
+
+    outline: none;
+
+    box-sizing: border-box;
+
+    transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder {
+    color: #a2acba;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #7c3aed;
+
+    box-shadow:
+            0 0 0 3px rgba(124, 58, 237, 0.10);
+}
+
+.form-group select {
+    cursor: pointer;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+    padding-top: 22px;
+
+    border-top: 1px solid #edf0f5;
+}
+
+
+/* =========================================
+   PRIMARY BUTTON
+========================================= */
+
+.primary-button {
+    min-width: 115px;
+    height: 41px;
+
+    padding: 0 20px;
+
+    border: none;
+    border-radius: 9px;
+
+    background: linear-gradient(
+            135deg,
+            #7c3aed,
+            #9333ea
+    );
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    box-shadow:
+            0 5px 14px rgba(124, 58, 237, 0.22);
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.primary-button:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+            0 7px 18px rgba(124, 58, 237, 0.30);
+}
+
+.primary-button:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* =========================================
+   SECONDARY BUTTON
+========================================= */
+
+.secondary-button {
+    min-width: 100px;
+    height: 41px;
+
+    padding: 0 18px;
+
+    border: 1px solid #d9dee8;
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #475569;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.secondary-button:hover {
+    background: #f8fafc;
+
+    border-color: #cbd5e1;
+
+    color: #1e293b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .form-card {
+        padding: 22px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .page-title h1 {
+        font-size: 23px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .form-card {
+        padding: 18px;
+
+        border-radius: 12px;
+    }
+
+    .button-group {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+
+    .primary-button,
+    .secondary-button {
+        width: 100%;
+    }
+}

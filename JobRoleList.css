@@ -1,0 +1,240 @@
+.job-role-layout {
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+.job-role-body {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+.job-role-main {
+    flex: 1;
+    padding: 30px;
+    overflow-x: auto;
+}
+
+.job-role-title {
+    margin-bottom: 25px;
+}
+
+.job-role-title h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #1f2937;
+}
+
+.job-role-title p {
+    margin-top: 7px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.job-role-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 13px 16px;
+    margin-bottom: 20px;
+}
+
+.job-role-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.job-role-card h2 {
+    margin: 0 0 20px;
+    color: #1f2937;
+    font-size: 18px;
+}
+
+.job-role-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.job-role-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.job-role-field-full {
+    grid-column: 1 / -1;
+}
+
+.job-role-field label {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.job-role-field input,
+.job-role-field textarea,
+.job-role-field select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 11px 12px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.job-role-field input:focus,
+.job-role-field textarea:focus,
+.job-role-field select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+
+.job-role-field textarea {
+    resize: vertical;
+}
+
+.job-role-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.job-role-save-button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.job-role-save-button:hover {
+    background: #1d4ed8;
+}
+
+.job-role-save-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+.job-role-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.job-role-table-header h2 {
+    margin: 0;
+}
+
+.job-role-table-header p {
+    margin: 5px 0 0;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.job-role-count {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.job-role-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.job-role-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.job-role-table th {
+    background: #f9fafb;
+    color: #4b5563;
+    text-align: left;
+    padding: 13px 15px;
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.job-role-table td {
+    padding: 14px 15px;
+    color: #374151;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.job-role-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.job-role-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.job-role-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.job-role-active {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.job-role-inactive {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.job-role-loading {
+    padding: 40px;
+    text-align: center;
+    color: #6b7280;
+}
+
+.job-role-empty {
+    text-align: center;
+    padding: 35px !important;
+    color: #9ca3af !important;
+}
+
+@media (max-width: 800px) {
+
+    .job-role-main {
+        padding: 20px;
+    }
+
+    .job-role-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .job-role-field-full {
+        grid-column: auto;
+    }
+
+    .job-role-table-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+}

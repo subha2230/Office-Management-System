@@ -1,0 +1,467 @@
+/* =========================================================
+   PAGE CONTENT
+========================================================= */
+
+.subcompany-content {
+    min-height: calc(100vh - 70px);
+    padding: 28px 26px;
+    background: #f5f7fb;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HIERARCHY
+========================================================= */
+
+.subcompany-hierarchy {
+    background: #ffffff;
+    border: 1px solid #e4e9f0;
+    border-radius: 8px;
+
+    padding: 12px 16px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 22px;
+
+    box-sizing: border-box;
+}
+
+.subcompany-hierarchy-item {
+    border: none;
+
+    background: #edf4ff;
+    color: #2563eb;
+
+    padding: 7px 15px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.subcompany-hierarchy-item:hover {
+    background: #dceaff;
+}
+
+.subcompany-hierarchy-item.active {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.subcompany-hierarchy-arrow {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.subcompany-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.subcompany-page-header h1 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    letter-spacing: -0.3px;
+}
+
+.subcompany-page-header p {
+    margin: 7px 0 0;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   ADD BUTTON
+========================================================= */
+
+.add-subcompany-btn {
+    border: none;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    padding: 10px 17px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.add-subcompany-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.subcompany-error {
+    background: #fee2e2;
+    color: #b91c1c;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+
+    margin-bottom: 18px;
+
+    font-size: 13px;
+
+    border: 1px solid #fecaca;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.subcompany-card {
+    background: #ffffff;
+
+    border: 1px solid #e1e7ef;
+
+    border-radius: 9px;
+
+    box-shadow:
+            0 2px 8px rgba(15, 23, 42, 0.04);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.subcompany-card-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 17px 20px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.subcompany-card-top h2 {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.subcompany-card-top p {
+    margin: 5px 0 0;
+
+    color: #64748b;
+
+    font-size: 12px;
+}
+
+.subcompany-total {
+    background: #edf4ff;
+    color: #2563eb;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.subcompany-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.subcompany-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 850px;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.subcompany-table th {
+    background: #f8fafc;
+
+    color: #475569;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: left;
+
+    padding: 12px 13px;
+
+    border-bottom: 1px solid #e2e8f0;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE DATA
+========================================================= */
+
+.subcompany-table td {
+    padding: 13px;
+
+    color: #334155;
+
+    font-size: 12px;
+
+    border-bottom: 1px solid #edf0f3;
+
+    vertical-align: middle;
+}
+
+.subcompany-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.subcompany-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   SUBCOMPANY NAME
+========================================================= */
+
+.subcompany-name {
+    color: #111827 !important;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.active-status {
+    display: inline-block;
+
+    background: #dcfce7;
+    color: #15803d;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.inactive-status {
+    display: inline-block;
+
+    background: #fee2e2;
+    color: #b91c1c;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.subcompany-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+
+/* =========================================================
+   EDIT
+========================================================= */
+
+.edit-subcompany-btn {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+    color: #1f2937;
+
+    padding: 6px 11px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.edit-subcompany-btn:hover {
+    background: #f1f5f9;
+}
+
+
+/* =========================================================
+   DELETE
+========================================================= */
+
+.delete-subcompany-btn {
+    border: none;
+
+    background: #fee2e2;
+    color: #dc2626;
+
+    padding: 6px 11px;
+
+    border-radius: 5px;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.delete-subcompany-btn:hover {
+    background: #fecaca;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.no-subcompany {
+    text-align: center;
+
+    padding: 45px 20px !important;
+
+    color: #64748b !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.subcompany-loading {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f7fb;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .subcompany-content {
+        padding: 22px 18px;
+    }
+
+    .subcompany-page-header h1 {
+        font-size: 22px;
+    }
+
+    .subcompany-table {
+        min-width: 800px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .subcompany-content {
+        padding: 18px 12px;
+    }
+
+    .subcompany-page-header {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    .add-subcompany-btn {
+        width: 100%;
+    }
+
+    .subcompany-hierarchy {
+        overflow-x: auto;
+
+        white-space: nowrap;
+    }
+}

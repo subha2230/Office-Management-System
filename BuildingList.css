@@ -1,0 +1,398 @@
+/* =========================================================
+   BUILDING MASTER
+========================================================= */
+
+.hierarchy-page {
+    padding: 24px;
+    min-height: 100%;
+    background: #f5f7fb;
+}
+
+
+/* =========================================================
+   HIERARCHY FLOW
+========================================================= */
+
+.hierarchy-flow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+}
+
+.hierarchy-node {
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hierarchy-arrow {
+    color: #9ca3af;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.hierarchy-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hierarchy-title h1 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.hierarchy-title p {
+    margin: 6px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.hierarchy-card {
+    margin-bottom: 20px;
+    padding: 22px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hierarchy-card h3 {
+    margin: 0 0 20px;
+    color: #1f2937;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.hierarchy-form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.hierarchy-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.hierarchy-field label {
+    margin-bottom: 7px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hierarchy-input,
+.hierarchy-select {
+    width: 100%;
+    height: 42px;
+    padding: 0 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    background: #ffffff;
+    color: #111827;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.hierarchy-input:focus,
+.hierarchy-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   FORM BUTTONS
+========================================================= */
+
+.hierarchy-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.hierarchy-btn {
+    border: none;
+    border-radius: 6px;
+    padding: 9px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.hierarchy-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+/* Primary */
+
+.hierarchy-btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.hierarchy-btn-primary:hover {
+    background: #1d4ed8;
+}
+
+
+/* Secondary */
+
+.hierarchy-btn-secondary {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #374151;
+}
+
+.hierarchy-btn-secondary:hover {
+    background: #f3f4f6;
+}
+
+
+/* Danger */
+
+.hierarchy-btn-danger {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.hierarchy-btn-danger:hover {
+    background: #fee2e2;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.hierarchy-error {
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    background: #fef2f2;
+    color: #b91c1c;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TOOLBAR
+========================================================= */
+
+.hierarchy-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.hierarchy-toolbar span {
+    color: #6b7280;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.hierarchy-search {
+    width: 320px;
+    height: 40px;
+    padding: 0 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    outline: none;
+    color: #111827;
+    font-size: 14px;
+}
+
+.hierarchy-search:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.10);
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.hierarchy-table-wrap {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.hierarchy-table {
+    width: 100%;
+    min-width: 850px;
+    border-collapse: collapse;
+}
+
+.hierarchy-table th {
+    padding: 13px 14px;
+    border-bottom: 1px solid #d1d5db;
+    background: #f3f4f6;
+    color: #374151;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.hierarchy-table td {
+    padding: 13px 14px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+.hierarchy-table tbody tr:hover {
+    background: #f9fafb;
+}
+
+
+/* =========================================================
+   STATUS BADGE
+========================================================= */
+
+.hierarchy-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.hierarchy-badge-active {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.hierarchy-badge-inactive {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.hierarchy-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.hierarchy-loading {
+    padding: 50px 20px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.hierarchy-empty {
+    padding: 50px 20px !important;
+    text-align: center;
+    color: #6b7280 !important;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hierarchy-page {
+        padding: 15px;
+    }
+
+    .hierarchy-flow {
+        flex-wrap: wrap;
+    }
+
+    .hierarchy-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .hierarchy-title h1 {
+        font-size: 22px;
+    }
+
+    .hierarchy-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hierarchy-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hierarchy-search {
+        width: 100%;
+    }
+
+    .hierarchy-form-actions {
+        justify-content: stretch;
+    }
+
+    .hierarchy-form-actions .hierarchy-btn {
+        flex: 1;
+    }
+
+    .hierarchy-card {
+        padding: 15px;
+    }
+
+    .hierarchy-flow {
+        gap: 6px;
+    }
+
+    .hierarchy-node {
+        padding: 7px 11px;
+        font-size: 13px;
+    }
+}

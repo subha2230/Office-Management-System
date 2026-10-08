@@ -1,0 +1,425 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+.company-layout {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #182033;
+    font-family: Inter, Arial, sans-serif;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.company-body {
+    display: flex;
+    min-height: calc(100vh - 70px);
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.company-main {
+    flex: 1;
+    min-width: 0;
+    background: #f5f7fb;
+}
+
+
+/* =========================================================
+   CONTENT
+
+   IMPORTANT:
+   Space reduced here
+========================================================= */
+
+.company-content {
+    padding: 24px 28px;
+}
+
+
+/* =========================================================
+   PAGE HEADER
+========================================================= */
+
+.company-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 18px;
+}
+
+.company-page-header h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 25px;
+    font-weight: 750;
+}
+
+.company-page-header p {
+    margin: 6px 0 0;
+
+    color: #7c8799;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ADD COMPANY BUTTON
+========================================================= */
+
+.add-company-btn {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 9px 15px;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.add-company-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.company-error {
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    border: 1px solid #fecaca;
+
+    padding: 10px 14px;
+
+    border-radius: 7px;
+
+    margin-bottom: 15px;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   COMPANY CARD
+========================================================= */
+
+.company-card {
+    width: 100%;
+
+    background: white;
+
+    border: 1px solid #e4e9f0;
+
+    border-radius: 9px;
+
+    box-shadow:
+            0 3px 12px rgba(15, 23, 42, 0.04);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.company-card-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #e7ebf1;
+}
+
+.company-card-top h2 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.company-total {
+    color: #64748b;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   TABLE WRAPPER
+========================================================= */
+
+.company-table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.company-table {
+    width: 100%;
+
+    min-width: 1050px;
+
+    border-collapse: collapse;
+}
+
+
+/* =========================================================
+   TABLE HEADER
+========================================================= */
+
+.company-table th {
+    background: #f7f9fc;
+
+    color: #526074;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    text-align: left;
+
+    padding: 11px 13px;
+
+    border-bottom: 1px solid #e1e6ee;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   TABLE DATA
+========================================================= */
+
+.company-table td {
+    padding: 12px 13px;
+
+    border-bottom: 1px solid #edf0f4;
+
+    color: #334155;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+.company-table tbody tr {
+    transition: background 0.15s ease;
+}
+
+.company-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.company-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================================
+   COMPANY NAME
+========================================================= */
+
+.company-name {
+    color: #172033 !important;
+
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.active-status {
+    display: inline-block;
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+    font-weight: 650;
+}
+
+.inactive-status {
+    display: inline-block;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+    padding: 4px 9px;
+
+    border-radius: 20px;
+
+    font-size: 9px;
+    font-weight: 650;
+}
+
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.company-actions {
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+}
+
+
+/* EDIT */
+
+.edit-company-btn {
+    border: 1px solid #d5dbe5;
+
+    background: white;
+
+    color: #334155;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.edit-company-btn:hover {
+    background: #f1f5f9;
+}
+
+
+/* DELETE */
+
+.delete-company-btn {
+    border: none;
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.delete-company-btn:hover {
+    background: #fecaca;
+}
+
+
+/* =========================================================
+   EMPTY
+========================================================= */
+
+.no-company {
+    text-align: center;
+
+    padding: 40px 20px !important;
+
+    color: #7c8799 !important;
+}
+
+
+/* =========================================================
+   LOADING
+========================================================= */
+
+.company-loading {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 400px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .company-content {
+        padding: 20px;
+    }
+
+    .company-page-header h1 {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .company-content {
+        padding: 15px;
+    }
+
+    .company-page-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .add-company-btn {
+        width: 100%;
+    }
+}
